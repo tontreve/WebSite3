@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zerotype Website Template</title>
+
+    <link href="/Content/style.css" rel="stylesheet" />
+    <link href="/Content/menu.css" rel="stylesheet" />
+    <script src="/Scripts/menu.js"></script>
+
+    <script src="/Scripts/jquery-3.2.1.min%20.js"></script>
+
+    <script src="/Scripts/highcharts.js"></script>
+    <script src="/Scripts/modules/exporting.js"></script>
+
+    <asp:ContentPlaceHolder ID="Cabeçario" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id = "form1" runat="server">
+	<div id="header">
+
+		<div id="sse1">
+          <div id="sses1">
+            <ul>
+                  <li><a href="principal.aspx">inicio</a></li>
+                  <li><a href="sobre.aspx">Sobre</a></li>
+                  <li><a href="grafico.aspx">Grafico</a></li>
+                  <li><a href="contato.aspx">Fale Conosco cagão</a></li>
+            </ul>
+          </div>
+        </div>
+
+	</div>
+
+	<div id="contents">
+
+    <asp:ContentPlaceHolder ID="Main" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Rodapé" runat="server"></asp:ContentPlaceHolder>
+	</div>
+	<div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+			</div>
+			<p>
+				© 2023 Zerotype. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+   </form>
+</body>
+</html>
